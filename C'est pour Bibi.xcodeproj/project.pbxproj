@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		F469F8512A55C1F900096695 /* C_est_pour_BibiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469F8502A55C1F900096695 /* C_est_pour_BibiApp.swift */; };
-		F469F8532A55C1F900096695 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469F8522A55C1F900096695 /* ContentView.swift */; };
+		F469F8532A55C1F900096695 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469F8522A55C1F900096695 /* WelcomeView.swift */; };
 		F469F8552A55C1FB00096695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F469F8542A55C1FB00096695 /* Assets.xcassets */; };
 		F469F8582A55C1FB00096695 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F469F8572A55C1FB00096695 /* Preview Assets.xcassets */; };
+		F469F85F2A55CDC400096695 /* AddMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469F85E2A55CDC400096695 /* AddMemberView.swift */; };
+		F469F8612A55D3EF00096695 /* Members.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469F8602A55D3EF00096695 /* Members.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F469F84D2A55C1F900096695 /* C'est pour Bibi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "C'est pour Bibi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F469F8502A55C1F900096695 /* C_est_pour_BibiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C_est_pour_BibiApp.swift; sourceTree = "<group>"; };
-		F469F8522A55C1F900096695 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F469F8522A55C1F900096695 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		F469F8542A55C1FB00096695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F469F8572A55C1FB00096695 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F469F85E2A55CDC400096695 /* AddMemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberView.swift; sourceTree = "<group>"; };
+		F469F8602A55D3EF00096695 /* Members.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Members.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				F469F8502A55C1F900096695 /* C_est_pour_BibiApp.swift */,
-				F469F8522A55C1F900096695 /* ContentView.swift */,
+				F469F8522A55C1F900096695 /* WelcomeView.swift */,
+				F469F85E2A55CDC400096695 /* AddMemberView.swift */,
+				F469F8602A55D3EF00096695 /* Members.swift */,
 				F469F8542A55C1FB00096695 /* Assets.xcassets */,
 				F469F8562A55C1FB00096695 /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F469F8532A55C1F900096695 /* ContentView.swift in Sources */,
+				F469F85F2A55CDC400096695 /* AddMemberView.swift in Sources */,
+				F469F8532A55C1F900096695 /* WelcomeView.swift in Sources */,
 				F469F8512A55C1F900096695 /* C_est_pour_BibiApp.swift in Sources */,
+				F469F8612A55D3EF00096695 /* Members.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

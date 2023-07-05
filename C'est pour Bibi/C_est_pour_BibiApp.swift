@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct C_est_pour_BibiApp: App {
+    @StateObject var data = Members()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                ContentView()
+            }.environmentObject(data)
         }
+            
     }
 }
