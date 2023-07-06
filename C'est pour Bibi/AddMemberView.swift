@@ -12,31 +12,31 @@ struct AddMemberView: View {
     @State var field : String = ""
     
     var body: some View {
-        
-        ZStack {
-            Color.red
-                .edgesIgnoringSafeArea(.all)
-            
-            VStack{
-                TextField("Nom de l'alcoolique 1", text: $field)
-                Button("Ajoute le"){
-                    data.member.append(Member(name: field))
+            ZStack {
+                Color.red
+                    .edgesIgnoringSafeArea(.all)
+                
+                VStack {
+                    TextField("Nom des alcooliques ", text: $field)
+                    Button("Ajoute le") {
+                        data.member.append(Member(name: field))
+                        field = ""
+                    }
                     
-                    print("clo", data.member, "c'esg")
-                }
-                    ForEach(data.member){
-                        member in
+                    // Correct usage of ForEach to iterate over data.member
+                    ForEach(data.member) { member in
                         Text(member.name)
-                    
+                    }
+                    NavigationLink("L'ets play !"){
+                        
+                    }
                 }
             }
         }
     }
-    
-}
 
 struct AddMemberView_Previews: PreviewProvider {
     static var previews: some View {
-        AddMemberView()
+        AddMemberView().environmentObject(Members())
     }
 }

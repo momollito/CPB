@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F43A71242A56B9AF00E9725A /* Roulette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43A71232A56B9AF00E9725A /* Roulette.swift */; };
+		F43A712D2A56C95600E9725A /* SimpleRoulette in Frameworks */ = {isa = PBXBuildFile; productRef = F43A712C2A56C95600E9725A /* SimpleRoulette */; };
 		F469F8512A55C1F900096695 /* C_est_pour_BibiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469F8502A55C1F900096695 /* C_est_pour_BibiApp.swift */; };
 		F469F8532A55C1F900096695 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469F8522A55C1F900096695 /* WelcomeView.swift */; };
 		F469F8552A55C1FB00096695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F469F8542A55C1FB00096695 /* Assets.xcassets */; };
@@ -16,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F43A71232A56B9AF00E9725A /* Roulette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roulette.swift; sourceTree = "<group>"; };
 		F469F84D2A55C1F900096695 /* C'est pour Bibi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "C'est pour Bibi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F469F8502A55C1F900096695 /* C_est_pour_BibiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C_est_pour_BibiApp.swift; sourceTree = "<group>"; };
 		F469F8522A55C1F900096695 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43A712D2A56C95600E9725A /* SimpleRoulette in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +62,7 @@
 				F469F8502A55C1F900096695 /* C_est_pour_BibiApp.swift */,
 				F469F8522A55C1F900096695 /* WelcomeView.swift */,
 				F469F85E2A55CDC400096695 /* AddMemberView.swift */,
+				F43A71232A56B9AF00E9725A /* Roulette.swift */,
 				F469F8602A55D3EF00096695 /* Members.swift */,
 				F469F8542A55C1FB00096695 /* Assets.xcassets */,
 				F469F8562A55C1FB00096695 /* Preview Content */,
@@ -89,6 +94,9 @@
 			dependencies = (
 			);
 			name = "C'est pour Bibi";
+			packageProductDependencies = (
+				F43A712C2A56C95600E9725A /* SimpleRoulette */,
+			);
 			productName = "C'est pour Bibi";
 			productReference = F469F84D2A55C1F900096695 /* C'est pour Bibi.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +125,9 @@
 				Base,
 			);
 			mainGroup = F469F8442A55C1F900096695;
+			packageReferences = (
+				F43A712B2A56C95600E9725A /* XCRemoteSwiftPackageReference "SimpleRoulette" */,
+			);
 			productRefGroup = F469F84E2A55C1F900096695 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F469F85F2A55CDC400096695 /* AddMemberView.swift in Sources */,
+				F43A71242A56B9AF00E9725A /* Roulette.swift in Sources */,
 				F469F8532A55C1F900096695 /* WelcomeView.swift in Sources */,
 				F469F8512A55C1F900096695 /* C_est_pour_BibiApp.swift in Sources */,
 				F469F8612A55D3EF00096695 /* Members.swift in Sources */,
@@ -345,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F43A712B2A56C95600E9725A /* XCRemoteSwiftPackageReference "SimpleRoulette" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fummicc1/SimpleRoulette.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F43A712C2A56C95600E9725A /* SimpleRoulette */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F43A712B2A56C95600E9725A /* XCRemoteSwiftPackageReference "SimpleRoulette" */;
+			productName = SimpleRoulette;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F469F8452A55C1F900096695 /* Project object */;
 }

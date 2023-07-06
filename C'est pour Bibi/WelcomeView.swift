@@ -8,28 +8,51 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+   
     var body: some View {
-        ZStack {
-            Color.yellow
-                .edgesIgnoringSafeArea(.all)
+        
+       
+            
             
             VStack{
-                Text ("À qui le tour ?" )
-                    .font(.largeTitle)
-                Spacer()
+                 Image("title")
+                .resizable()
+                .scaledToFit()
+                .padding(.trailing,70)
+                .padding([.vertical,.leading], 20)
+                
+                Text ("L'appli qui décide qui va payer la prochaine tournée !")
+                    .multilineTextAlignment(.center)
+                    .font(.title2)
+                    .padding(10)
+            Spacer()
+                Image("beer")
+                    .resizable()
+                    .scaledToFit()
+            Spacer()
                 Text ("Tu rentres les noms de tes collègues, tu lances la roue, et le chanceux paie la tournée!")
-                Spacer()
-                NavigationLink("Add Member"){
+                    .multilineTextAlignment(.center)
+                    .font(.title3)
+                    .padding(30)
+                
+                NavigationLink{
                         AddMemberView()
-                        .navigationTitle("Ajoute tes potes")
                         
-                    }
+                } label: {
+                    Text ("Ajoute tes potes")
+                        .font(.title3)
+                        .padding(15)
+                        .background(.white)
+                        .cornerRadius(100)
+                        
+                }
                 
                     
                 
             }
-        }
+        
+            
+        
     }
 }
 
