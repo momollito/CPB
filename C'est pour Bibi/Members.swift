@@ -8,8 +8,13 @@
 import SwiftUI
 
 class Members : ObservableObject{
-    @Published var member : [Member] = []
+@Published var member : [Member]
+    
+    init() {
+            member =  []  // Initialize the member array with an empty array
+        }
 }
+
 
 
 struct Member : Identifiable {
