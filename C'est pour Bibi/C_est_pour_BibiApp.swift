@@ -14,11 +14,11 @@ struct C_est_pour_BibiApp: App {
     @StateObject var data = Members()
     
     var body: some Scene {
-            WindowGroup {
-                NavigationStack {
-                    ContentView().implementPopupView()
-                        
-                }.environmentObject(data)
-            }
+        WindowGroup {
+            NavigationStack {
+                ContentView().implementPopupView()
+                
+            }.environmentObject(data)
         }
     }
+}

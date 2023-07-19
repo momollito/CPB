@@ -8,11 +8,11 @@
 import SwiftUI
 
 class Members : ObservableObject{
-@Published var member : [Member]
+    @Published var member : [Member]
     
     init() {
-            member =  []  // Initialize the member array with an empty array
-        }
+        member =  [Member(name: "ko"), Member(name: "bill")]  // Initialize the member array with an empty array
+    }
 }
 
 
