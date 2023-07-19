@@ -11,7 +11,7 @@ class Members : ObservableObject{
     @Published var member : [Member]
     
     init() {
-        member =  [Member(name: "ko"), Member(name: "bill")]  // Initialize the member array with an empty array
+        member =  []  // Initialize the member array with an empty array
     }
 }
 
