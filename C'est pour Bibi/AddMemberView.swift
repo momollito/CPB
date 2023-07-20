@@ -14,10 +14,12 @@ struct AddMemberView: View {
     var body: some View {
         
         
-        let backColor = Color(red: 240/250, green: 238/250, blue: 217/250)
+        //        let backColor = Color(red: 240/250, green: 238/250, blue: 217/250)
         
         
         ZStack{Color(red: 240/250, green: 238/250, blue: 217/250).ignoresSafeArea()
+            
+            
             VStack {
                 Image("title")
                     .resizable()
@@ -29,7 +31,6 @@ struct AddMemberView: View {
                 
                 HStack{
                     TextField("Ajouter un buveur...", text: $field)
-                    //                    .multilineTextAlignment(.center)
                         .font(.title2)
                     
                     Image(systemName: "plus.app")
@@ -70,16 +71,16 @@ struct AddMemberView: View {
                 Spacer()
             }
         }
-            
-            
-            
-        }
+        
+        
         
     }
     
-    
-    struct AddMemberView_Previews: PreviewProvider {
-        static var previews: some View {
-            AddMemberView().environmentObject(Members())
-        }
+}
+
+
+struct AddMemberView_Previews: PreviewProvider {
+    static var previews: some View {
+        AddMemberView().environmentObject(Members())
     }
+}

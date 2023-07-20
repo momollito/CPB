@@ -14,13 +14,13 @@ struct FortuneWheelView: View {
     @EnvironmentObject var data : Members
     
     @State var playerName = ""
-    @State var showAlert = false
+    
     @State var counter: Int = 0
     
     var body: some View {
         
-
-//        let backColor = Color(red: 240/250, green: 238/250, blue: 217/250)
+        
+        //        let backColor = Color(red: 240/250, green: 238/250, blue: 217/250)
         
         
         
